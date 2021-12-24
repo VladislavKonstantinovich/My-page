@@ -1,0 +1,88 @@
+.container {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.5rem;
+    border: 3px solid rgb(0, 247, 255);
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+
+#figures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+
+    margin-top: 10px;
+}
+
+#figures div{
+    display: flex;
+    justify-content: center;
+
+    margin: 2px;
+    align-items: center;
+    height: 45px;
+    max-width: auto;
+    border: 3px ridge rgb(0, 247, 255);
+    border-radius: 0.5rem;
+    color: black;
+    font-size: xx-large;
+    user-select: none;
+    cursor: pointer;
+}
+
+#figures div:nth-child(12){
+    margin-bottom: 10px;
+}
+
+#figures div:hover {
+    transition: .2s;
+    /* color: rgb(247, 67, 67); */
+    background-color: rgb(158, 247, 250);
+}
+
+#actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+
+    margin-top: 10px;
+}
+
+#actions div{
+    display: flex;
+    justify-content: center;
+
+    margin: 2px;
+    align-items: center;
+    height: 45px;
+    max-width: auto;
+    border: 3px ridge rgb(0, 247, 255);
+    border-radius: 0.5rem;
+    color: black;
+    font-size: xx-large;
+    user-select: none;
+    cursor: pointer;
+}
+
+#actions div:hover {
+    transition: .2s;
+    /* color: rgb(247, 67, 67); */
+    background-color: rgb(158, 247, 250);
+}
+
+#screen {
+    width: 97%;
+    height: 55px;
+    border: 3px groove  rgb(0, 247, 255);
+    border-radius: 0.5rem;
+    font-size: xx-large;
+}
+

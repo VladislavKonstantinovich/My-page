@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: transform 0.3s ease;
+}
+
+.move{
+    transform: translateX(232px);
+}
+
+h1{
+    margin: 10px;
+}
+
+nav{
+    background-color: rgb(55, 59, 124);
+    border: 2px grey solid;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 232px;
+    z-index: 4;
+    transform: translateX(-100%);
+}
+
+nav .logo{
+    border-bottom: 2px grey solid;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+nav .logo img{
+    border-radius: 100%;
+}
+
+nav ul{
+    list-style-type: none
+}
+
+nav ul li{
+    margin-left: 10px;
+    padding: 20px 0;
+}
+
+.move ul li{
+    padding: 20px 10px;
+    transition: 1s;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul div{
+    border-bottom: 2px solid grey;
+}
+
+header{
+    background-color: rgb(55, 59, 124);
+    color: white;
+    height: 50%; 
+    
+    max-width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+  header button{
+    border: none;
+    font-size: x-large;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#toggle{
+    padding: 10px 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(47, 50, 102);
+    cursor: pointer;
+}
+
+#toggle:hover{
+    background-color: rgb(37, 39, 83);
+}
+
+#open{
+    padding: 15px 35px;
+    background-color: rgb(200, 40, 192);
+    margin: 10px;
+    cursor: pointer;
+}
+
+#open:hover{
+    background-color: rgb(161, 29, 155);
+    transition: 0.2s;
+}
+
+.container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal-container.show-modal {
+    display: block;
+  }
+  
+  .modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+  
+  .modal-header {
+    background: rgb(55, 59, 124);
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-form div {
+    margin: 15px 0;
+  }
+  
+  .modal-form .form-input {
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .close-btn {
+    padding: 0 5px;
+    color: #fff;
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
